@@ -1,0 +1,164 @@
+html {
+    height: 100%;
+}
+
+/*https://codepen.io/alvarotrigo/pen/jOLgeqe*/
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+  
+.title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+}
+  
+.title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+  
+.title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+}
+  
+.title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+}
+  
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+  
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 28pt;
+    text-transform: uppercase;
+}
+
+body {
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 14pt;
+    background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    color: white;
+}
+
+header {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 20pt;
+    color: white;
+    text-align: center;
+    outline-style: ridge;
+}
+
+h1, h2 {
+    font-style: oblique;
+    text-shadow: 2px 2px 4px black;
+}
+
+main {
+    float: right;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    /*padding-left: 10%;    messes things up...moves content down*/
+    padding-right: 10%;
+}
+
+nav {
+    position: fixed;
+    /*width: 10%;*/
+    max-width: 10%;
+    /*text-align: left;*/
+    outline-style: ridge;
+    /*outline-offset: -2px;*/
+    /*height: 500px; ... what is the default height???*/
+}
+
+a {
+    color: maroon;
+}
+a:hover {
+    text-decoration: dashed;
+    background-color: yellow;
+}
+
+footer {
+    clear: both;
+    /*width: 80%;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;*/
+    
+    text-align: center;
+    font-size: 10pt;
+    outline-style: ridge;
+}
+
+figcaption {
+    font-size: 12pt;
+}
+
+.navlist {
+    text-align: left;
+    font-weight: bold;
+}
+
+.responsive {
+    max-width: 60%;
+    border-radius: 8px;
+}
+
+.centerTable {
+    border: 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* https://stackoverflow.com/questions/12777034/text-overflowing-the-sides-of-its-container-div
+Hoping this will add to accessibility for as many browsers/versions as possible. */
+.wordwrap {  
+    white-space: pre-wrap;      /* Webkit */    
+    white-space: -moz-pre-wrap; /* Firefox */     
+    white-space: -pre-wrap;     /* Opera <7 */    
+    white-space: -o-pre-wrap;   /* Opera 7 */     
+    word-wrap: break-word;      /* IE */ 
+}
+
+
+/* Responsive to smaller sized screens */
+@media screen and (max-width: 750px) {
+    header {
+        color: cyan;
+        font-size: 75%;
+    }
+
+    body {
+        background: black;
+        color: cyan;
+        font-size: 75%;
+    }
+    nav {
+        font-size: 90%;
+        font-weight: bolder;
+    }
+    figcaption {
+        font-size: 10pt;
+    }
+}

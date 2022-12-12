@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+
+    <link href="../css_files/main.css" rel="stylesheet">
+    <script src="../js_files/main.js"></script>
+    
+    <style>
+        td, th {
+            border: 1px solid;
+        }
+        main > section > p {
+            font-weight: bold;
+            text-decoration: wavy;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 class="title">
+          <span class="title-word title-word-1">An</span>
+          <span class="title-word title-word-2">Example</span>
+          <span class="title-word title-word-3">Recipe</span>
+        </h1>
+    </header>
+
+    <nav>
+        <p class="navlist"><a href="./index.html">Home</a></p>
+        <p class="navlist"><a href="./brewing_process.html">Brewing Process</a></p>
+        <p class="navlist"><span>Recipe</span></p>
+        <p class="navlist"><a href="./short_history.html">Short History</a></p>
+        <p class="navlist"><a href="./resources.html">Resources</a></p>
+        <p class="navlist"><a href="./contact_us.html">Contact Us</a></p>
+        <script>showDate()</script>
+    </nav>
+    <main>
+        <figure>
+            <img src="../images/beer-ingredients.jpg" alt="The four ingredients necessary to make beer" class="responsive" 
+            width="400" height="258">
+            <figcaption>The four ingredients necessary to brew beer - water, malted grain, hops, and yeast.</figcaption>
+        </figure>
+        <br>
+        <section>
+            <h2>The following recipe is a (very) basic example:</h2>
+            
+            <!--<div class="centerTable">
+                <script src="../js_files/table.js"></script>
+            </div>-->
+            
+            <!--The following table outlines a basic beer recipe. -->
+            <table class="centerTable">
+                <caption>A New England IPA</caption>
+                
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Time (when to add)</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Water</td>
+                        <td>Mash In</td>
+                        <td>Approx. 350 gals.</td>
+                    </tr>
+                    <tr>
+                        <td>Calcium Chloride</td>
+                        <td>Mash In</td>
+                        <td>2 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Lactic Acid</td>
+                        <td>Mash In</td>
+                        <td>200 mls</td>
+                    </tr>
+                    <tr>
+                        <td>Pilsen Malt</td>
+                        <td>Mash In</td>
+                        <td>800 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Flaked Oats</td>
+                        <td>Mash In</td>
+                        <td>250 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Carapils Malt</td>
+                        <td>Mash In</td>
+                        <td>27.5 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Magnum Hops</td>
+                        <td>0 mins into boil</td>
+                        <td>2.5 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Citra Hops</td>
+                        <td>85 mins into boil</td>
+                        <td>5.5 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Mosaic Hops</td>
+                        <td>Whirlpool</td>
+                        <td>11 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Citra Hops</td>
+                        <td>Whirlpool</td>
+                        <td>22 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Yeast</td>
+                        <td>Knockout</td>
+                        <td>Depends on strain!</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="center" colspan="3">Ferment at 70 F for 5-7 days. 
+                            Dry hopping, filtration, carbonation and packaging steps not included.
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <p>*This is a commercial scale recipe for a 10 bbl (barrel) brewhouse.
+                1 bbl = 31 gallons.
+            </p>
+
+        </section>
+    </main>
+    <footer id="foot">
+        <script>writeRandomQuote()</script>
+    </footer>
+</body>
+</html>
