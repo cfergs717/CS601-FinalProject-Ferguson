@@ -9,6 +9,8 @@ Ever since then, I was hooked. Right after graduating from the University of Pit
 
 **Details about the site**
 
+THIS SITE IS HOSTED ON GLITCH, SO BE CAREFUL ABOUT HOW YOU TRY TO DOWNLOAD THESE FILES. I RECOMMEND DOWNLOADING THE .tgz FILE AND GOING FROM THERE!
+
 While this website only consists of six total pages, there's a lot of CSS and JS interacting behind the scenes. 
 
 I used Vue on my Home page to include similar functionality as what we built in HW #6, but I added image captions changing with the pictures as well. On each page, some JS is used for generating the current data in the Navigation window and generating random (Beer) quotes in the footer. On the Recipe page, I employed JS with the fetch functionality to dynamically populate a table with recipe information. I hope to include Vue on this page as well so that an arrow button can be pushed to scrolls through multiple recipes.
