@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewing Process</title>
+
+    <link href="main.css" rel="stylesheet">
+    <script src="main.js"></script>
+
+    <style>
+        main > section > p {
+            font-size: 125%;
+        }
+        main > section > ul {
+            white-space: normal;
+            text-align: left;
+            line-height: 150%;
+            font-size: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 class="title">
+          <span class="title-word title-word-1">The</span>
+          <span class="title-word title-word-2">Brewing</span>
+          <span class="title-word title-word-3">Process</span>
+        </h1>
+    </header>
+
+    <nav>
+        <p class="navlist"><a href="./index.html">Home</a></p>
+        <p class="navlist"><span>Brewing Process</span></p>
+        <p class="navlist"><a href="./recipe.html">Recipe</a></p>
+        <p class="navlist"><a href="./short_history.html">Short History</a></p>
+        <p class="navlist"><a href="./resources.html">Resources</a></p>
+        <p class="navlist"><a href="./contact_us.html">Contact Us</a></p>
+        <script>showDate()</script>
+    </nav>
+    <main>
+        <figure>
+            <img src="https://cdn.glitch.global/8c8e78d5-b7d9-40c9-9408-5a158450a9db/brewing_process_image.jpg?v=1670877420577" 
+                  alt="Basic infographic of the brewing process" class="responsive" 
+                  width="500" height="500">
+            <figcaption>A basic infographic of the brewing process.</figcaption>
+        </figure>
+        <br>
+        <!-- Video outlining the basic brewing process on a commercial scale -->
+        <iframe class="responsive" width="600" height="400" alt="Video describing the brewing process"
+            src="https://www.youtube.com/embed/ZL_HGOgy_Zo" allowfullscreen>
+        </iframe>
+        <section>
+            <h2>Notes about the video</h2>
+            <p>This video does an excellent job of outlining the entire brewing process, but I thought it would be educational
+                to point out some key differences between what's described in the video (traditional, German methods) and what
+                occurs today in the U.S.
+            </p>
+
+            <!-- The video is oriented more towards German methods of brewing, so I drew some contrasting
+                    points to what happens in the American brewing industry. -->
+            <ul>
+                <li>Most American breweries don't use Kieselguhr (Diatomaceous Earth). It's an old filtration method used
+                    by the Germans, and on top of its difficulty of use, it's carcinogenic to breathe in the powder (weirdly,
+                    it's totally fine to ingest/drink once in the beer)
+                </li>
+                <li>LOTS of other adjuncts are used today in the U.S., such as fruits, nuts, herbs, etc...
+                    the Germans hate that we do this (LOL).</li>
+                <li>Most breweries are not large enough for the brewer to be sitting at a desk behind a computer screen. Brewers
+                    are basically glorified janitors.
+                </li>
+                <li>Multi-step mashing (as described in the video) is more common in German brewing. Americans tend to
+                    use "Single Infusion" mashing, where you mash in at one temperature and let it rest.
+                </li>
+                <li>I could name plenty more, but you're probably bored by now (:</li>
+            </ul>
+            
+        </section>
+    </main>
+    <footer id="foot">
+        <script>writeRandomQuote()</script>
+    </footer>
+</body>
+</html>

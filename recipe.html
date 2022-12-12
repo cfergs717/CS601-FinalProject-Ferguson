@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+
+    <link href="main.css" rel="stylesheet">
+    <script src="main.js"></script>
+    
+    <style>
+        td, th {
+            border: 1px solid;
+        }
+        main > section > p {
+            font-weight: bold;
+            text-decoration: wavy;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 class="title">
+          <span class="title-word title-word-1">An</span>
+          <span class="title-word title-word-2">Example</span>
+          <span class="title-word title-word-3">Recipe</span>
+        </h1>
+    </header>
+
+    <nav>
+        <p class="navlist"><a href="./index.html">Home</a></p>
+        <p class="navlist"><a href="./brewing_process.html">Brewing Process</a></p>
+        <p class="navlist"><span>Recipe</span></p>
+        <p class="navlist"><a href="./short_history.html">Short History</a></p>
+        <p class="navlist"><a href="./resources.html">Resources</a></p>
+        <p class="navlist"><a href="./contact_us.html">Contact Us</a></p>
+        <script>showDate()</script>
+    </nav>
+    <main>
+        <!-- Image of the four basic beer ingredients -->
+        <figure>
+            <img src="https://cdn.glitch.global/8c8e78d5-b7d9-40c9-9408-5a158450a9db/beer-ingredients.jpg?v=1670877427906" 
+                  alt="The four ingredients necessary to make beer" class="responsive" 
+                  width="400" height="258">
+            <figcaption>The four ingredients necessary to brew beer - water, malted grain, hops, and yeast.</figcaption>
+        </figure>
+        <br>
+        <section>
+            <h2>The following recipe is a (very) basic example:</h2>
+            
+            <!-- The following script simulates fetching recipe data from a server
+                   and populating a table-->
+            <table id="tableSpot" class="centerTable">
+                <script src="table.js"></script>
+            </table>
+
+            <p>Dry hopping, filtration, carbonation and packaging steps not included.<br>
+              *This is a commercial scale recipe for a 10 bbl (barrel) brewhouse.
+                1 bbl = 31 gallons.
+            </p>
+
+        </section>
+    </main>
+    <footer id="foot">
+        <script>writeRandomQuote()</script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="main.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script> 
+</head>
+<body>
+    <header class="container">
+        <h1 class="title">
+          <span class="title-word title-word-1">My</span>
+          <span class="title-word title-word-2">Brewing</span>
+          <span class="title-word title-word-3">Experiences</span>
+        </h1>
+    </header>
+
+    <nav>
+        <p class="navlist"><span>Home</span></p>
+        <p class="navlist"><a href="./brewing_process.html">Brewing Process</a></p>
+        <p class="navlist"><a href="./recipe.html">Recipe</a></p>
+        <p class="navlist"><a href="./short_history.html">Short History</a></p>
+        <p class="navlist"><a href="./resources.html">Resources</a></p>
+        <p class="navlist"><a href="./contact_us.html">Contact Us</a></p>
+        <script>showDate()</script>
+    </nav>
+
+    <noscript>
+        We're very sorry, but this website requires JavaScript in order to function properly. 
+        Please enable JavaScript to proceed. Thank you.
+    </noscript>
+
+    <main>
+        <!-- Use Vue app to switch between images and their respective captions upon mouseover event -->
+        <figure id="app">
+            <img class="responsive" v-bind:src="imageDisplayOne" alt="Working in the brewery" 
+                v-on:mouseover = "mouseOnImage(imageTwo, captionTwo)" 
+                v-on:mouseout = "mouseOffImage(imageOne, captionOne)">
+            <figcaption> {{ imageCaption }} </figcaption>
+            <br>
+        </figure>
+    
+        <!-- Import Vue App -->
+        <script src="vue.js"></script>
+    
+        <!-- Mount Vue App-->
+        <script>
+            const mountedApp = app.mount("#app");
+        </script>
+
+        <section>
+            <h2>My Brewing Career</h2>
+            <p>Hello everyone, and welcome to my brewing career page! Unlike most of you, I have not spent 
+                my adult career in the technology field. Instead, right after graduating from the University of Pittsburgh
+                with a Bachelors in Computer Science, I decided to pursue my favorite hobby (homebrewing) as a career.
+                I immediately enrolled in the Siebel Institute of Technology, where I spent six months in Chicago and six
+                months in Munich, Germany studying brewing science. Upon graduation, I started working for Ithaca Beer Co. 
+                in Ithaca, NY, and a few years later I began working for Other Half Brewing approximately 30 minutes south
+                of Rochester, NY. Currently, I'm working to open my own brewery in the summer of 2023, and I'm hoping this class
+                will be a good resource for building our company website!
+            </p>
+        </section>
+    </main>
+    <footer id="foot">
+        <script>writeRandomQuote()</script>
+    </footer>
+</body>
+</html>

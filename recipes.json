@@ -1,0 +1,59 @@
+{
+    "NEIPA_recipe": [
+        {
+            "ingredient": "Water",
+            "time_to_add": "Mash In",
+            "amount": "350 gallons"
+        },
+        {
+            "ingredient": "Calcium Chloride",
+            "time_to_add": "Mash In",
+            "amount": "2 lbs."
+        },
+        {
+            "ingredient": "Lactic Acid",
+            "time_to_add": "Mash In",
+            "amount": "200 mls"
+        },
+        {
+            "ingredient": "Pilsen Malt",
+            "time_to_add": "Mash In",
+            "amount": "800 lbs."
+        },
+        {
+            "ingredient": "Flaked Oats",
+            "time_to_add": "Mash In",
+            "amount": "250 lbs."
+        },
+        {
+            "ingredient": "Carapils Malt",
+            "time_to_add": "Mash In",
+            "amount": "27.5 lbs."
+        },
+        {
+            "ingredient": "Magnum Hops",
+            "time_to_add": "0 mins. into Boil",
+            "amount": "2.5 lbs."
+        },
+        {
+            "ingredient": "Citra Hops",
+            "time_to_add": "85 mins. into Boil",
+            "amount": "5.5 lbs."
+        },
+        {
+            "ingredient": "Mosaic Hops",
+            "time_to_add": "Whirlpool",
+            "amount": "11 lbs."
+        },
+        {
+            "ingredient": "Citra Hops",
+            "time_to_add": "Whirlpool",
+            "amount": "22 lbs."
+        },
+        {
+            "ingredient": "Yeast",
+            "time_to_add": "Knockout",
+            "amount": "Depends on strain!"
+        }
+    ]
+}
